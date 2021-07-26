@@ -1,0 +1,29 @@
+git init - 최초 시작
+git remote add 주소 - 원격 저장소 와 로컬 저장소 연결
+
+git status - 현재 폴더 내부에 있는 변경된 파일 찾기 
+
+git add <file name>
+stage단계로 파일 올리기 (commit 전단계) 
+ 
+git commit -m "a" or / git commit <file name>
+push 할 준비 완료 
+
+git push origin <branchname>
+원격 저장소에 코드 올리기
+
+git fetch origin branch 
+or 
+git pull(git fetch + git merge FETCH-HEAD)
+코드 가져오기 
+
+git clone -> 한번에 다 가져오기 
+
+git branch <new>
+<new> branch 만들기
+ 
+git checkout <new>
+<new> branch로 이동
+
+git push origin <new> -> 
+새로운 branch 원격 저장소에 만들면서 코드 올리기
