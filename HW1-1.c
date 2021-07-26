@@ -21,7 +21,7 @@ void menu() {
 		scanf("%d", &num);
 		switch (num) {
 		case 0:
-			break;
+			return;
 		case 1:
 			push();
 			break;
@@ -40,10 +40,6 @@ void menu() {
 		default:
 			printf("선택할 수 없는 메뉴입니다.\n");
 			break;
-		}
-
-		if (num == 0) {
-			return;
 		}
 	}
 }
