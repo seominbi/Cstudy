@@ -6,10 +6,10 @@ void push();
 void pop();
 void size();
 void empty();
-void peek();
+void top();
 
 int stack[1000000] = { 0, };
-int top = -1;
+int t = -1;
 
 int main()
 {
@@ -35,7 +35,7 @@ void menu() {
 			empty();
 			break;
 		case 5:
-			peek();
+			top();
 			break;
 		default:
 			printf("선택할 수 없는 메뉴입니다.\n");
@@ -47,22 +47,22 @@ void push() {
 	int n;
 	scanf("%d", &n);
 
-	stack[++top]=n;
+	stack[++t]=n;
 }
 void pop() {
-	if (top == -1) { printf("stack is empty\n"); }
+	if (t == -1) { printf("stack is empty\n"); }
 	else {
-		stack[--top];
+		stack[--t];
 	}
 }
 void size() {
-	printf("%d\n", top + 1);
+	printf("%d\n", t + 1);
 }
 void empty() {
-	if (top == -1) { printf("True\n"); }
+	if (t == -1) { printf("True\n"); }
 	else { printf("False\n"); }
 }
-void peek() {
-	if (top == -1) { printf("stack is empty\n"); }
-	else { printf("%d\n", stack[top]); }
+void top() {
+	if (t == -1) { printf("stack is empty\n"); }
+	else { printf("%d\n", stack[t]); }
 }
