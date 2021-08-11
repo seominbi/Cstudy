@@ -1,0 +1,30 @@
+Linked List 자료구조 구현
+
+data type = int 형
+
+사용자가 0을 입력할 때 까지 0~5 메뉴를 반복 한다.
+
+1. insert X : X 를 linked list 맨 뒤에 추가한다. 
+2. inset X  N : X 를 N 오른쪽에 추가한다. (단, N이 없다면 없다고 출력)
+3. print ALL : Linked list 에 있는 모든 data를 출력한다. 
+4. Delete X : Linked List 맨 뒤 data를 삭제한다. 
+5. Delete N : linked list 안에 있는 N을 삭제한다. 
+6. Search N : linked list 안에 N이 있다면 1 없다면 0을 출력한다. 
+
+1 ~ 5 모두 함수로 구현할것.
+완료후 깃에 업로드
+1 1
+1 2
+1 3
+1 4
+3
+1 -> 2 -> 3 -> 4 -> NULL
+2 5 3
+3
+1 -> 2 -> 3 -> 5 -> 4 -> NULL
+4
+3
+1 -> 2 -> 3 -> 5 -> NULL
+5 2
+3
+1 -> 3 -> 5 -> NULL
